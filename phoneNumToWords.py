@@ -1,17 +1,38 @@
+#import NTLK or pyenchant dictionary here
+
+
 # Digit-to-letter mapping
 digit_to_letters = {
     '2': 'ABC', '3': 'DEF', '4': 'GHI', '5': 'JKL',
     '6': 'MNO', '7': 'PQRS', '8': 'TUV', '9': 'WXYZ'
 
+################################################################################################
+# Generate combinations for specific sections
+#def generate_10_digit_combinations(phone_number):
+    
+
+#def generate_7_digit_whole_combinations(phone_number):
+    
+
+#def generate_7_digit_two_combinations(phone_number):
+    
+
+#def generate_exchange_only_combinations(phone_number):
+
+
+#def generate_number_only_combinations(phone_number):
+
+################################################################################################
 #def hashFunction(condition, phone_number):
     #condition_functions = {
         #"10-digit": generate_10_digit_combinations,
         #"7-digit whole": generate_7_digit_whole_combinations,
-        #"7-digit split": generate_7_digit_split_combinations,
+        #"7-digit two words": generate_7_digit_two_combinations,
         #"exchange only": generate_exchange_only_combinations,
         #"number only": generate_number_only_combinations
    # }
 
+################################################################################################
 # Main function to take input and process the phone number
 def main():
     while True:
@@ -29,8 +50,25 @@ def main():
     exchange_code = phone_number[3:6]
 
     # Process each condition to find meaningful word combinations
-   # for condition in ["10-digit", "7-digit whole", "7-digit split", "exchange only", "number only"]:
+   # for condition in ["10-digit", "7-digit whole", "7-digit two words", "exchange only", "number only"]:
        # valid_words = hashFunction(condition, phone_number)
 
+
+       # if valid_words:
+           # if condition == "10-digit":
+              
+           # elif condition == "7-digit whole":
+             
+           # elif condition == "7-digit two words":
+     
+           # elif condition == "exchange only":
+
+           # elif condition == "number only":
+
+           # return
+
+    # If no word found, format and print the phone number
+    #formatted_number = f"1-{area_code}-{exchange_code}-{phone_number[6:]}"
+    #print(f"{formatted_number}: No word combination available")
 
 main()
